@@ -1,0 +1,30 @@
+{
+  "name": "dall-e-image-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "openai": "^4.20.1"
+  },
+  "build": {
+    "appId": "dall-e-generator",
+    "mac": {
+      "category": "ai"
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "icon.ico"
+    }
+  }
+}

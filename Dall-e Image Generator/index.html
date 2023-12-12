@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DALL-E App</title>
+</head>
+<body>
+    <h1>DALL-E Image Generator</h1>
+    <input type="text" id="apiKey" placeholder="Enter API Key">
+    <!-- <input type="resolution" id="resolution" placeholder="Resolution (eg: 400x400)"> -->
+    <input type="text" id="prompt" placeholder="Enter prompt">
+    <button id="generate">Generate Image</button>
+    <div id="loading" style="display: none;">Loading...</div>
+    <img id="result" src="" alt="Generated Image" style="display: none;">
+    <button id="save" style="display: none;">Save to Disk</button>
+    <script src="renderer.js"></script>
+</body>
+</html>
