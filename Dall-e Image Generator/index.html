@@ -9,6 +9,18 @@
     <!-- <input type="resolution" id="resolution" placeholder="Resolution (eg: 400x400)"> -->
     <input type="text" id="prompt" placeholder="Enter prompt">
     <button id="generate">Generate Image</button>
+
+    <!-- File Input Element -->
+    <input type="file", accept=".png" id="imageInput">
+    <!-- Display File Contents -->
+    <div id="imageContainer"></div>
+
+        <!-- File Input Element -->
+        <input type="file", accept=".png" id="maskImageInput">
+        <!-- Display File Contents -->
+        <div id="maskImageContainer"></div>
+
+    <button id="edit">Edit Image with mask</button>
     <div id="loading" style="display: none;">Loading...</div>
     <img id="result" src="" alt="Generated Image" style="display: none;">
     <button id="save" style="display: none;">Save to Disk</button>

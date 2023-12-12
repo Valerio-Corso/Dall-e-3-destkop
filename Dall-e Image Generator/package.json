@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "start-debug": "SET ELECTRON_ENABLE_LOGGING=true && electron .",
     "build": "electron-builder"
   },
   "author": "",
